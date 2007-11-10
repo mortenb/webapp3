@@ -8,6 +8,33 @@
 <!-- =========== FULL CONFIGURATION FILE ================================== -->
 
 <faces-config>
-    
+   <navigation-rule>
+    <navigation-case>
+      <from-outcome>start</from-outcome>
+      <to-view-id>/startside.jsp</to-view-id>
+      <redirect/>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>regProfil</from-outcome>
+      <to-view-id>/regProfil.jsp</to-view-id>
+      <redirect/>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>visStat</from-outcome>
+        <to-view-id>/visStat.jsp</to-view-id>
+        <redirect/>
+    </navigation-case>
+     <navigation-case>
+        <from-outcome>velgKriterier</from-outcome>
+        <to-view-id>/velgKriterier.jsp</to-view-id>
+        <redirect/>
+    </navigation-case>
+     <navigation-case>
+        <from-outcome>visMatch</from-outcome>
+        <to-view-id>/visMatch.jsp</to-view-id>
+        <redirect/>
+    </navigation-case>
+  </navigation-rule>
+
   
 </faces-config>

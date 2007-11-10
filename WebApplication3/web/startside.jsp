@@ -23,7 +23,7 @@
                     <h:commandLink value="Vis statistikk" action="visStat" />
                 </h:form>
             </div>
-             <h1>Velkommen til Teambyggeren!</h1>
+             <h1>Velkommen til Teambyggeren! </h1>
         </body>
     </html>
 </f:view>

@@ -24,7 +24,7 @@
                 </h:form>
             </div>
              <h1>Registrer din profil:</h1>
-             Hei, <h:outputText value="#{bruker.brukernavn}"/>
+             Hei, <h:outputText value="#{Bruker.brukernavn}"/>
         </body>
     </html>
 </f:view>

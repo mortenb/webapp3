@@ -24,6 +24,10 @@
                 </h:form>
             </div>
              <h1>Velkommen til Teambyggeren! </h1>
+             <h:form> 
+             Skriv inn navn: <h:inputText value="#{bruker.brukernavn}"/>
+             
+             </h:form>
         </body>
     </html>
 </f:view>

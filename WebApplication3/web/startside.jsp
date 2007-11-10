@@ -1,37 +1,29 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%--
-The taglib directive below imports the JSTL library. If you uncomment it,
-you must also add the JSTL library to the project. The Add Library... action
-on Libraries node in Projects view can be used to add the JSTL 1.1 library.
---%>
-<%--
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
---%>
-
+<%@ taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+<%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+"http://www.w3.org/TR/html4/loose.dtd">
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
 
-    <h1>JSP Page</h1>
-    Hei verden, dette er en test av Frodes første eksempel!
-    
-    <%--
-    This example uses JSTL, uncomment the taglib directive above.
-    To test, display the page like this: index.jsp?sayHello=true&name=Murphy
-    --%>
-    <%--
-    <c:if test="${param.sayHello}">
-        <!-- Let's welcome the user ${param.name} -->
-        Hello ${param.name}!
-    </c:if>
-    --%>
-    
-    </body>
-</html>
+<f:view>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>JSF-teambygger</title>
+        </head>
+        <body>
+           
+            <div class="meny"> 
+                <h:form>
+                    <h:commandLink value="Startsiden" action="start" />
+                    <h:commandLink value="Registrer profil" action="regProfil" />
+                    <h:commandLink value="Velg kriterier" action="velgKriterier" />
+                    <h:commandLink value="Vis matcher" action="visMatch" />
+                    <h:commandLink value="Vis statistikk" action="visStat" />
+                </h:form>
+            </div>
+             <h1>Velkommen til Teambyggeren!</h1>
+        </body>
+    </html>
+</f:view>

@@ -22,7 +22,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
     <h1>JSP Page</h1>
     <br/>
     <a href="./faces/welcomeJSF.jsp">JavaServer Faces Welcome Page</a>
-    
+    <% response.sendRedirect("startside.jsp"); %>
     <%--
     This example uses JSTL, uncomment the taglib directive above.
     To test, display the page like this: index.jsp?sayHello=true&name=Murphy

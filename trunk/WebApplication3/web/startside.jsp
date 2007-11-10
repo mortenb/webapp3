@@ -14,20 +14,20 @@
         </head>
         <body>
            
-            <div class="meny"> 
+            
                 <h:form>
+            <div class="meny"> 
                     <h:commandLink value="Startsiden" action="start" />
                     <h:commandLink value="Registrer profil" action="regProfil" />
                     <h:commandLink value="Velg kriterier" action="velgKriterier" />
                     <h:commandLink value="Vis matcher" action="visMatch" />
                     <h:commandLink value="Vis statistikk" action="visStat" />
-                </h:form>
             </div>
+                    Skriv inn navn: <h:inputText value="#{Bruker.brukernavn}"/>
+                </h:form>
+            
              <h1>Velkommen til Teambyggeren! </h1>
-             <h:form> 
-             Skriv inn navn: <h:inputText value="#{bruker.brukernavn}"/>
              
-             </h:form>
         </body>
     </html>
 </f:view>

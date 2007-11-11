@@ -27,7 +27,7 @@ public class Matchmaker {
     //public void 
     public void setBruker(Bruker b)
     {
-        b.lagre();
+        //b.lagre();
         bruker = b;
     }
     

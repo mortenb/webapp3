@@ -22,7 +22,8 @@
                     <h:commandLink value="Vis statistikk" action="visStat" />
                 </h:form>
             </div>
-            <h1>Den brukeren som passer best for deg er:</h1>
+            <h1>Den brukeren som passer best for deg er:</h1><br />
+            <h:outputText value="#{Bruker.match}" />
         </body>
     </html>
 </f:view>

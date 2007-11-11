@@ -257,8 +257,14 @@ public class Bruker {
     {
         Bruker b = new Bruker();
         b.setBrukernavn(brukernavn);
-        return b;
-        
+        return b;   
+    }
+    
+    public String getMatch()
+    {
+        Matchmaker m = new Matchmaker();
+        m.setBruker(this);
+        return m.getMatchNavn();
     }
     
 

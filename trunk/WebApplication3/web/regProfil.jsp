@@ -27,17 +27,47 @@
              Hei, <h:outputText value="#{Bruker.brukernavn}" />
              <h:form>
                  <br /> Spm 1:<br />
-                 
-                 <h:selectOneRadio value="#{Bruker.preferanse1}" >
-                     
+                 <h:selectOneRadio value="#{Bruker.preferanse1}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
- 
                  </h:selectOneRadio>
-                 <h:commandButton action="#{Bruker.lagre}" value="Lagre verdier" />
+                 <br /> Spm 2:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse2}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 3:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse3}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 4:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse4}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 5:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse5}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 6:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse6}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 7:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse7}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 8:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse8}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 9:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse9}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
+                 <br /> Spm 10:<br />
+                 <h:selectOneRadio value="#{Bruker.preferanse10}" > 
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                 </h:selectOneRadio>
                  
-               
-                 
-                
+                 <h:commandButton action="#{Bruker.lagre}" value="Lagre verdier" />    
                  
              </h:form>
         </body>

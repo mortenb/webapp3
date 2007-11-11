@@ -13,9 +13,8 @@
             <title>JSF-teambygger</title>
         </head>
         <body>
-            
             <div class="meny"> 
-                <h:form>
+                <h:form >
                     <h:commandLink value="Startsiden" action="start" />
                     <h:commandLink value="Registrer profil" action="regProfil" />
                     <h:commandLink value="Velg kriterier" action="velgKriterier" />
@@ -23,7 +22,7 @@
                     <h:commandLink value="Vis statistikk" action="visStat" />
                 </h:form>
             </div>
-            <h1>Her vises matchene:</h1>
+            <h1>Den brukeren som passer best for deg er:</h1>
         </body>
     </html>
 </f:view>

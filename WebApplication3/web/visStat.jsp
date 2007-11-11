@@ -29,6 +29,8 @@
             <h:outputText value="#{Bruker.preferanse1}" />
             <br />
              <h:outputText value="#{Bruker.preferanse2}" />
+             <br />
+
         </body>
     </html>
 </f:view>

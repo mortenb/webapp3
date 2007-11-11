@@ -24,35 +24,20 @@
                 </h:form>
             </div>
              <h1>Registrer din profil:</h1>
-             Hei, <h:outputText value="#{Bruker.brukernavn}"/>
+             Hei, <h:outputText value="#{Bruker.brukernavn}" />
              <h:form>
+                 <br /> Spm 1:<br />
                  
-                 <h:selectOneRadio value="#{Bruker.preferanse1}">
+                 <h:selectOneRadio value="#{Bruker.preferanse1}" >
                      
                      <f:selectItems value="#{Bruker.alternativer}" />
-                         
-                  
+ 
                  </h:selectOneRadio>
-                 Spm 1:<br />
-                 <h:selectOneRadio id="pref1" value="#{Bruker.preferanse1}" onclick="submit()" >
-                     <f:selectItem itemValue="1" itemLabel="1" />
-                     <f:selectItem  itemValue="2" itemLabel="2" />
-                     <f:selectItem  itemValue="3" itemLabel="3" />
-                     <f:selectItem  itemValue="4" itemLabel="4" />
-                     <f:selectItem itemValue="5" itemLabel="5" />
-                 </h:selectOneRadio>  
-                 <br />Spm 2: <br />
-                  <h:selectOneRadio id="pref2" value="#{Bruker.preferanse2}">
-                     <f:selectItem id="pref21" itemValue="1" itemLabel="1" />
-                     <f:selectItem id="pref22" itemValue="2" itemLabel="2" />
-                     <f:selectItem id="pref23" itemValue="3" itemLabel="3" />
-                     <f:selectItem id="pref24" itemValue="4" itemLabel="4" />
-                     <f:selectItem id="pref25" itemValue="5" itemLabel="5" />
-                 </h:selectOneRadio>    
+                 <h:commandButton action="regProfil" value="Lagre verdier" />
                  
-                 Skriv inn pref2: <h:inputText value="#{Bruker.preferanse2}"/>
                
-                 <h:outputText value="#{Bruker.preferanse1}" />
+                 
+                
                  
              </h:form>
         </body>

@@ -32,13 +32,15 @@ public class Bruker {
         brukerID = -1;
         for(int i = 1; i<6; i++)
         {
-            SelectItem u = new SelectItem("i","" + i );
+            
+            SelectItem u = new SelectItem(i);
         
             alternativer.add(u);
         }
         
     }
     
+
     public List getAlternativer()
     {
         

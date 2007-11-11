@@ -44,7 +44,7 @@ public class DataAccess {
             c = getConnection();
             
             s = c.createStatement();
-            
+            System.out.println("Test");
             rs = s.executeQuery(sql);
                
             

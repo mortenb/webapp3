@@ -11,6 +11,7 @@ package matchmaker;
 
 import matchmaker.hjelpeklasser.DataAccess;
 import java.util.*;
+import javax.faces.model.SelectItem;
 
 /**
  *
@@ -21,13 +22,29 @@ public class Bruker {
     private String brukernavn, bildeURL;
     private int preferanser[];
     private int brukerID;
+    private List alternativer = new ArrayList();
+    
+    
     
     public Bruker() {
         brukernavn = "";
         preferanser= new int[10];
         brukerID = -1;
+        for(int i = 1; i<6; i++)
+        {
+            SelectItem u = new SelectItem("i","" + i );
+        
+            alternativer.add(u);
+        }
+        
     }
     
+    public List getAlternativer()
+    {
+        
+        return alternativer;
+        
+    }
     
     public void lagre()
     {

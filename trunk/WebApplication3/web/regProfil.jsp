@@ -33,7 +33,7 @@
                      <f:selectItems value="#{Bruker.alternativer}" />
  
                  </h:selectOneRadio>
-                 <h:commandButton action="regProfil" value="Lagre verdier" />
+                 <h:commandButton action="#{Bruker.lagre}" value="Lagre verdier" />
                  
                
                  

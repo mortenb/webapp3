@@ -48,8 +48,9 @@ public class Bruker {
         
     }
     
-    public void lagre()
+    public String lagre()
     {
+        String retur = "visStat";
         //hvis brukerID = -1, lagre ny, hvis != -1 oppdater eksisterende.
         String sql;
         if( brukerID == -1)
@@ -85,6 +86,7 @@ public class Bruker {
         {
             System.out.println(e.getMessage());
         }
+        return retur;
     }
     
     private void getProfil()
@@ -92,9 +94,9 @@ public class Bruker {
         //< hente profildata fra database hvis det finnes  >
         
         String sql = "SELECT * FROM brukerprofil WHERE brukernavn = '" + brukernavn + "'";
-        
+        System.out.println("getprofil kalles nå: " + sql);
         List<List<String>> brukerinfo = DataAccess.getResultQuery(sql);
-        
+        System.out.println("antall:" + brukerinfo.size() );
         if(brukerinfo.isEmpty()) return;
         
         for(List<String> l : brukerinfo)
@@ -112,7 +114,7 @@ public class Bruker {
         
     }
     
-    
+  
     public void setBrukernavn(String navn)
     {
         this.brukernavn = navn;

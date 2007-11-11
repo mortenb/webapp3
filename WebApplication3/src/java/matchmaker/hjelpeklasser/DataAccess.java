@@ -1,7 +1,5 @@
 package matchmaker.hjelpeklasser;
 import java.sql.*;
-import java.util.Collections;
-import java.util.Collection;
 import java.util.*;
 
 

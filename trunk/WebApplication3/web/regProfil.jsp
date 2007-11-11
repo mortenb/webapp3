@@ -27,6 +27,12 @@
              Hei, <h:outputText value="#{Bruker.brukernavn}"/>
              <h:form>
                  
+                 <h:selectOneRadio value="#{Bruker.preferanse1}">
+                     
+                     <f:selectItems value="#{Bruker.alternativer}" />
+                         
+                  
+                 </h:selectOneRadio>
                  Spm 1:<br />
                  <h:selectOneRadio id="pref1" value="#{Bruker.preferanse1}" onclick="submit()" >
                      <f:selectItem itemValue="1" itemLabel="1" />

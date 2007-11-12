@@ -378,9 +378,16 @@ public class Bruker {
     
     public String getMatch()
     {
+        String ut = "";
         Matchmaker m = new Matchmaker();
         m.setBruker(this);
-        return m.getMatchNavn();
+        List<Bruker> brukere = m.getSortertMatchListe();
+        for(Bruker b : brukere)
+        {
+            ut += "" + b.getBrukernavn();
+        }
+        System.out.println(ut);
+        return ut;
     }
     
 

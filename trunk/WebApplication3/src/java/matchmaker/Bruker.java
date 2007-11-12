@@ -23,29 +23,145 @@ public class Bruker {
     private int preferanser[];
     private int brukerID;
     private List alternativer = new ArrayList();
+    private int kriterier[]; //Hvilke kriterier som skal regnes med
+    private List kriterieAlternativer = new ArrayList();
     
     
     
-    public Bruker() {
+    public Bruker() 
+    {
         brukernavn = "";
         preferanser= new int[10];
+        kriterier = new int[preferanser.length];
         brukerID = -1;
         for(int i = 1; i<6; i++)
-        {
-            
+        {  
             SelectItem u = new SelectItem(i);
-        
             alternativer.add(u);
         }
+        for(int i = 0; i<kriterier.length; i++)
+            kriterier[i] = 1;
         
-    }
+        
+            SelectItem u = new SelectItem(0,"nei");
+            kriterieAlternativer.add(u);
+            SelectItem v = new SelectItem(1, "ja");
+            kriterieAlternativer.add(v);
+            
+            
     
-
+    }
     public List getAlternativer()
     {
         
         return alternativer;
         
+    }
+    
+    public List getKriterieAlternativer()
+    {
+        return kriterieAlternativer;
+    }
+    
+    public void setKriterie1( int i )
+    {
+        kriterier[0] = i;
+    }
+    
+    public int getKriterie1()
+    {
+        return kriterier[0];
+    }
+    
+   
+    
+     public void setKriterie2( int i )
+    {
+        kriterier[1] = i;
+    }
+    
+    public int getKriterie2()
+    {
+        return kriterier[1];
+    }
+    
+     public void setKriterie3( int i )
+    {
+        kriterier[2] = i;
+    }
+    
+    public int getKriterie3()
+    {
+        return kriterier[2];
+    }
+    
+     public void setKriterie4( int i )
+    {
+        kriterier[3] = i;
+    }
+    
+    public int getKriterie4()
+    {
+        return kriterier[3];
+    }
+    
+     public void setKriterie5( int i )
+    {
+        kriterier[4] = i;
+    }
+    
+    public int getKriterie5()
+    {
+        return kriterier[4];
+    }
+    
+     public void setKriterie6( int i )
+    {
+        kriterier[5] = i;
+    }
+    
+    public int getKriterie6()
+    {
+        return kriterier[5];
+    }
+    
+   public void setKriterie7( int i )
+    {
+        kriterier[6] = i;
+    }
+    
+    public int getKriterie7()
+    {
+        return kriterier[6];
+    }
+    
+     public void setKriterie8( int i )
+    {
+        kriterier[7] = i;
+    }
+    
+    public int getKriterie8()
+    {
+        return kriterier[7];
+    }
+     public void setKriterie9( int i )
+    {
+        kriterier[8] = i;
+    }
+    
+    public int getKriterie9()
+    {
+        return kriterier[8];
+    }
+    
+     public void setKriterie10( int i )
+    {
+        kriterier[9] = i;
+    }
+    
+    public int getKriterie10()
+    {
+        return kriterier[9];
     }
     
     public String lagre()

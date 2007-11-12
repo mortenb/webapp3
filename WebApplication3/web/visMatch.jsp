@@ -26,7 +26,7 @@
             
             <h:dataTable value="#{Bruker.listeMatch}" var="item" >
                 <h:column>
-                    <h:outputText value="#{Bruker.brukernavn}" />
+                    <h:outputText value="#{item.brukernavn}" />
                 </h:column>
             </h:dataTable>
             

@@ -23,7 +23,13 @@
                 </h:form>
             </div>
             <h1>Den brukeren som passer best for deg er:</h1><br />
-            <h:outputText value="#{Bruker.match}" />
+            
+            <h:dataTable value="#{Bruker.listeMatch}" var="item" >
+                <h:column>
+                    <h:outputText value="#{item. />
+                </h:column>
+            </h:dataTable>
+            
         </body>
     </html>
 </f:view>

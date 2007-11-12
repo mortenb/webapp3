@@ -24,12 +24,17 @@
                 </h:form>
             </div>
             <h1>Her kan du se på statistikk</h1>
-            Du har svart:<br />
-            <h:outputText value="#{Bruker.brukernavn}" /> <br />
-            <h:outputText value="#{Bruker.preferanse1}" />
-            <br />
-             <h:outputText value="#{Bruker.preferanse2}" />
-             <br />
+                <h:dataTable value="#{Bruker.alleBrukere}" var="item" >
+                <h:column>
+                    <h:outputText value="#{item.brukernavn}" />
+                </h:column>
+                <h:column>
+                    <h:outputText value="#{item.preferanse1}" />
+                </h:column>
+                <h:column>
+                    <h:outputText value="#{item.preferanse2}" />
+                </h:column>
+            </h:dataTable>
 
         </body>
     </html>

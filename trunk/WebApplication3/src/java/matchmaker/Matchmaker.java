@@ -45,14 +45,45 @@ public class Matchmaker {
         return getBesteMatchNavn();
     }
     
-    private List<Bruker> getSortertMatchListe()
+    public List<Bruker> getSortertMatchListe()
     {
-        /*List<List<String>> resultat;
-        String sql;
-        sql = "select brukernavn, ";
-        sql += "power(pref1-3, 2)+power(pref2-3, 2)+power(pref3-3, 2) as avstand from brukerprofil order by avstand;
-        */
-        return null;
+        List<Bruker> alleBrukere = Bruker.getBrukere();
+        List<Bruker> alleSorterteBrukere = new ArrayList<Bruker>();
+        
+        
+        while(!alleBrukere.isEmpty())
+        {
+            double minAvstand = Double.MAX_VALUE;
+            Bruker best = null;
+            
+            System.out.println(alleBrukere.size() + "Åtte" );
+            for(Bruker b : alleBrukere)
+            {
+                System.out.println("ti");
+            double tempAvstand = getTotalAvstand(b, bruker);
+            //System.out.println(b.getBrukernavn().equalsIgnoreCase(bruker.getBrukernavn()));
+            if(tempAvstand < minAvstand)
+            {
+                if(b.getBrukernavn().equalsIgnoreCase(bruker.getBrukernavn()) == false)
+                {   
+                    minAvstand = tempAvstand;
+                    best = b;  
+                }
+                else
+                {
+                    alleBrukere.remove(b);
+                    break;
+                }
+            }
+            }
+            if( best != null)
+            {
+                alleSorterteBrukere.add(best);
+                alleBrukere.remove(best);
+            }
+            
+        }
+        return alleSorterteBrukere;
     }
     
     private String getBesteMatchNavn()

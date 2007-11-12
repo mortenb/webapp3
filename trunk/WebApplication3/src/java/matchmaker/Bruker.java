@@ -368,6 +368,20 @@ public class Bruker {
         return brukerliste;
     }
     
+    public List<Bruker> getAlleBrukere()
+    {
+        String sql = "SELECT brukernavn FROM brukerprofil ORDER BY brukernavn";
+        List<List<String>> resultat = DataAccess.getResultQuery(sql);
+        List<Bruker> brukerliste = new LinkedList<Bruker>();
+        
+        for(List<String> l : resultat)
+        {           
+            String brukernavn = l.get(0);
+            brukerliste.add(Bruker.getBruker(brukernavn));
+         }
+        
+        return brukerliste;
+    }
     
     public static Bruker getBruker(String brukernavn)
     {

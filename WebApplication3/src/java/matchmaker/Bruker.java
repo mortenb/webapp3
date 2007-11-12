@@ -390,5 +390,12 @@ public class Bruker {
         return ut;
     }
     
+    public List<Bruker> getListeMatch()
+    {
+        Matchmaker m = new Matchmaker();
+        m.setBruker(this);
+        List<Bruker> brukere = m.getSortertMatchListe();
+        return brukere;
+    }
 
 }

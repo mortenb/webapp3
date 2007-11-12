@@ -24,6 +24,70 @@
                 </h:form>
             </div>
             <h1>Her kan du velge kriterier:</h1>
+            
+            <h:form>
+                Spm 1: 
+                <h:selectOneRadio value="#{Bruker.kriterie1}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                 Spm 2: 
+                <h:selectOneRadio value="#{Bruker.kriterie2}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                Spm 3: 
+                <h:selectOneRadio value="#{Bruker.kriterie3}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                 Spm 4: 
+                <h:selectOneRadio value="#{Bruker.kriterie4}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                Spm 5: 
+                <h:selectOneRadio value="#{Bruker.kriterie5}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                 Spm 6: 
+                <h:selectOneRadio value="#{Bruker.kriterie6}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                Spm 7: 
+                <h:selectOneRadio value="#{Bruker.kriterie7}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                 Spm 8: 
+                <h:selectOneRadio value="#{Bruker.kriterie8}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                Spm 9: 
+                <h:selectOneRadio value="#{Bruker.kriterie9}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                 Spm 10: 
+                <h:selectOneRadio value="#{Bruker.kriterie10}" >
+                   <f:selectItems value="#{Bruker.kriterieAlternativer}" />
+                
+                </h:selectOneRadio>
+                <br />
+                <h:commandButton action="velgKriterier" value="OK" />
+            </h:form>
         </body>
     </html>
 </f:view>

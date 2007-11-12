@@ -384,7 +384,7 @@ public class Bruker {
         List<Bruker> brukere = m.getSortertMatchListe();
         for(Bruker b : brukere)
         {
-            ut += "" + b.getBrukernavn();
+            ut += "" + b.getBrukernavn() +"\n ";
         }
         System.out.println(ut);
         return ut;

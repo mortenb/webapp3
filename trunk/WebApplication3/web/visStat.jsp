@@ -9,6 +9,7 @@
 <f:view>
     <html>
         <head>
+            <link rel="stylesheet" href="stil.css" type="text/css">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title>JSF-teambygger</title>
         </head>
@@ -24,7 +25,8 @@
                 </h:form>
             </div>
             <h1>Her kan du se på statistikk</h1>
-                <h:dataTable value="#{Bruker.alleBrukere}" var="item" border="1">
+                <h:dataTable value="#{Bruker.alleBrukere}" var="item" border="1" 
+                headerClass="hode" rowClasses="en,to" >
                 <h:column>
                     <f:facet name="header">
                         <f:verbatim>Brukernavn</f:verbatim>

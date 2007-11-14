@@ -26,61 +26,53 @@
             <h1>Her kan du velge kriterier:</h1>
             
             <h:form>
-                Spm 1: 
+                <f:loadBundle basename="spmtext" var="text" />
+                 <h:outputText value="#{text.spm1}" /> <br />
                 <h:selectOneRadio value="#{Bruker.kriterie1}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                 Spm 2: 
+                  <br /> <h:outputText value="#{text.spm2}" /> <br /> 
                 <h:selectOneRadio value="#{Bruker.kriterie2}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                Spm 3: 
+                <br /> <h:outputText value="#{text.spm3}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie3}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                 Spm 4: 
+                <br /> <h:outputText value="#{text.spm4}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie4}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                Spm 5: 
+                <br /> <h:outputText value="#{text.spm5}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie5}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                 Spm 6: 
+                <br /> <h:outputText value="#{text.spm6}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie6}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                Spm 7: 
+                <br /> <h:outputText value="#{text.spm7}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie7}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                 Spm 8: 
+                <br /> <h:outputText value="#{text.spm8}" /> <br /> 
                 <h:selectOneRadio value="#{Bruker.kriterie8}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                Spm 9: 
+                <br /> <h:outputText value="#{text.spm9}" /> <br /> 
                 <h:selectOneRadio value="#{Bruker.kriterie9}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 
                 </h:selectOneRadio>
-                <br />
-                 Spm 10: 
+                <br /> <h:outputText value="#{text.spm10}" /> <br />  
                 <h:selectOneRadio value="#{Bruker.kriterie10}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
                 

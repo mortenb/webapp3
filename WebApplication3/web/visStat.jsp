@@ -24,17 +24,87 @@
                 </h:form>
             </div>
             <h1>Her kan du se på statistikk</h1>
-                <h:dataTable value="#{Bruker.alleBrukere}" var="item" >
+                <h:dataTable value="#{Bruker.alleBrukere}" var="item" border="1">
                 <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Brukernavn</f:verbatim>
+                    </f:facet>
                     <h:outputText value="#{item.brukernavn}" />
                 </h:column>
                 <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm1</f:verbatim>
+                    </f:facet>
                     <h:outputText value="#{item.preferanse1}" />
                 </h:column>
                 <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm2</f:verbatim>
+                    </f:facet>
                     <h:outputText value="#{item.preferanse2}" />
                 </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm3</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse3}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm4</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse4}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm5</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse5}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm6</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse6}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm7</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse7}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm8</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse8}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm9</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse9}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <f:verbatim>Spm10</f:verbatim>
+                    </f:facet>
+                    <h:outputText value="#{item.preferanse10}" />
+                </h:column>
             </h:dataTable>
+            <br />
+            Her er spørsmålene: <br />
+            <f:loadBundle basename="spmtext" var="text" />
+                 Spm1:  <h:outputText value="#{text.spm1}" /> <br />
+                 Spm2:  <h:outputText value="#{text.spm2}" /> <br />
+                 Spm3:  <h:outputText value="#{text.spm3}" /> <br />
+                 Spm4:  <h:outputText value="#{text.spm4}" /> <br />
+                 Spm5:  <h:outputText value="#{text.spm5}" /> <br />
+                 Spm6:  <h:outputText value="#{text.spm6}" /> <br />
+                 Spm7:  <h:outputText value="#{text.spm7}" /> <br />
+                 Spm8:  <h:outputText value="#{text.spm8}" /> <br />
+                 Spm9:  <h:outputText value="#{text.spm9}" /> <br />
+                 Spm10:  <h:outputText value="#{text.spm10}" /> <br />
 
         </body>
     </html>

@@ -43,9 +43,9 @@ public class Bruker {
             kriterier[i] = 1;
         
         
-            SelectItem u = new SelectItem(0,"nei");
+            SelectItem u = new SelectItem(0,"Teller ikke");
             kriterieAlternativer.add(u);
-            SelectItem v = new SelectItem(1, "ja");
+            SelectItem v = new SelectItem(1, "Teller");
             kriterieAlternativer.add(v);
             
             

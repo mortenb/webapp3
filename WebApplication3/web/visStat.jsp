@@ -95,7 +95,7 @@
                 </h:column>
             </h:dataTable>
             <br />
-            Her er spørsmålene: <br />
+            Her er spørsmålene:  <br />
             <f:loadBundle basename="spmtext" var="text" />
                  Spm1:  <h:outputText value="#{text.spm1}" /> <br />
                  Spm2:  <h:outputText value="#{text.spm2}" /> <br />

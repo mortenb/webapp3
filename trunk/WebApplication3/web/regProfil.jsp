@@ -23,46 +23,47 @@
                     <h:commandLink value="Vis statistikk" action="visStat" />
                 </h:form>
             </div>
-             <h1>Registrer din profil:</h1>
-             Hei, <h:outputText value="#{Bruker.brukernavn}" />
+             <h1>Registrer din profil , <h:outputText value="#{Bruker.brukernavn}" /> </h1>
+             Ranger påstandene fra 1=helt uenig til 5=helt enig.
              <h:form>
-                 <br /> Spm 1:<br />
+                 <f:loadBundle basename="spmtext" var="text" />
+                 <h:outputText value="#{text.spm1}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse1}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 2:<br />
+                 <br /> <h:outputText value="#{text.spm2}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse2}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 3:<br />
+                 <br /> <h:outputText value="#{text.spm3}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse3}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 4:<br />
+                 <br /> <h:outputText value="#{text.spm4}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse4}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 5:<br />
+                 <br /> <h:outputText value="#{text.spm5}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse5}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 6:<br />
+                 <br /> <h:outputText value="#{text.spm6}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse6}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 7:<br />
+                 <br /> <h:outputText value="#{text.spm7}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse7}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 8:<br />
+                 <br /> <h:outputText value="#{text.spm8}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse8}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 9:<br />
+                 <br /> <h:outputText value="#{text.spm9}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse9}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>
-                 <br /> Spm 10:<br />
+                 <br /> <h:outputText value="#{text.spm10}" /> <br />
                  <h:selectOneRadio value="#{Bruker.preferanse10}" > 
                      <f:selectItems value="#{Bruker.alternativer}" />
                  </h:selectOneRadio>

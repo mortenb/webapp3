@@ -22,7 +22,8 @@
                     <h:commandLink value="Vis statistikk" action="visStat" />
                 </h:form>
             </div>
-            <h1>Den brukeren som passer best for deg er:</h1><br />
+            <h1>Matchliste</h1>
+            Her er dine matcher, sortert med best match øverst.<br /><br />
             
             <h:dataTable value="#{Bruker.listeMatch}" var="item" >
                 <h:column>

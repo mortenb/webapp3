@@ -23,7 +23,8 @@
                     <h:commandLink value="Vis matcher" action="visMatch" />
                     <h:commandLink value="Vis statistikk" action="visStat" />
             </div>
-                    Skriv inn navn: <h:inputText value="#{Bruker.brukernavn}"/>
+                    Velkommen 
+                    <h:outputText value="#{Bruker.brukernavn}" />
                 </h:form>
             
              <h1>Velkommen til Teambyggeren! </h1>

@@ -31,7 +31,7 @@
             index.jsp
         </welcome-file>
     </welcome-file-list>
-    <!--security-constraint>
+    <security-constraint>
         <display-name>Hindre direkte tilgang til svarsider</display-name>
         <web-resource-collection>
             <web-resource-name>JSF-svar-sider</web-resource-name>
@@ -46,7 +46,7 @@
         </auth-constraint>
         
         
-    </security-constraint-->
+    </security-constraint>
     <security-constraint>
         <display-name>autentifisering</display-name>
         <web-resource-collection>

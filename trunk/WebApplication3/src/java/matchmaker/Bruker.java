@@ -166,7 +166,7 @@ public class Bruker {
     
     public String lagre()
     {
-        String retur = "visStat";
+        String retur = "regProfil";
         //hvis brukerID = -1, lagre ny, hvis != -1 oppdater eksisterende.
         String sql;
         if( brukerID == -1)

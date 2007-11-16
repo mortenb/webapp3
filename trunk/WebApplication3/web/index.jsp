@@ -1,1 +1,3 @@
-<% response.sendRedirect("startside.faces"); %> 
+<% //response.sendRedirect("startside.faces"); %> 
+
+Hello baby.

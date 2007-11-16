@@ -16,7 +16,7 @@
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
-        </servlet>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.faces</url-pattern>
@@ -27,23 +27,50 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-	<welcome-file>
-           index.jsp
+        <welcome-file>
+            index.jsp
         </welcome-file>
     </welcome-file-list>
-    <security-constraint>
+    <!--security-constraint>
         <display-name>Hindre direkte tilgang til svarsider</display-name>
         <web-resource-collection>
-      <web-resource-name>JSF-svar-sider</web-resource-name>
-        <url-pattern>/startside.jsp</url-pattern>
-        <url-pattern>/regProfil.jsp</url-pattern>
-        <url-pattern>/velgKriterier.jsp</url-pattern>
-        <url-pattern>/visMatch.jsp</url-pattern>
-        <url-pattern>/visStat.jsp</url-pattern>
-      </web-resource-collection>
-    <auth-constraint>
-      <description>ingen roller, ikke direkte tilgang</description>
-    </auth-constraint>
-
+            <web-resource-name>JSF-svar-sider</web-resource-name>
+            <url-pattern>/startside.jsp</url-pattern>
+            <url-pattern>/regProfil.jsp</url-pattern>
+            <url-pattern>/velgKriterier.jsp</url-pattern>
+            <url-pattern>/visMatch.jsp</url-pattern>
+            <url-pattern>/visStat.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>ingen roller, ikke direkte tilgang</description>
+        </auth-constraint>
+        
+        
+    </security-constraint-->
+    <security-constraint>
+        <display-name>autentifisering</display-name>
+        <web-resource-collection>
+            <web-resource-name>Sikker</web-resource-name>
+            <url-pattern>/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>tomcat</role-name>
+            <role-name>bruker</role-name>
+        </auth-constraint>
     </security-constraint>
-    </web-app>
+    
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>Sikkert område</realm-name>
+        <form-login-config>
+            <form-login-page>/logginn.jsp</form-login-page>
+            <form-error-page>/feil.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description/>
+        <role-name>bruker</role-name>
+    </security-role>
+</web-app>

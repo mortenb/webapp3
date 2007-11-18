@@ -30,7 +30,6 @@
                  <h:outputText value="#{text.spm1}" /> <br />
                 <h:selectOneRadio value="#{Bruker.kriterie1}" >
                    <f:selectItems value="#{Bruker.kriterieAlternativer}" />
-                
                 </h:selectOneRadio>
                   <br /> <h:outputText value="#{text.spm2}" /> <br /> 
                 <h:selectOneRadio value="#{Bruker.kriterie2}" >
